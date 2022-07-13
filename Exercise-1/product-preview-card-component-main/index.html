@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+    body{
+        height: 100vh;
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .container{
+        /* background-color: red; */
+        height: 95%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .img-container{
+        height: 40%;
+        width: 100%;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-repeat: no-repeat;
+        background-clip: padding-box;
+        background-size: cover;
+    }
+
+    .text{
+        height: 60%;
+        width: 100%;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container{
+        width: 91%;
+    }
+
+    .text-container h1{
+        line-height: 35px;
+        font-weight: 700;
+        font-family: 'Fraunces', serif;
+    }
+    .Title{
+        color: hsl(212, 21%, 14%);
+    }
+    .text-container p{
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+        color: hsl(228, 12%, 48%);
+    }
+    .Price{
+        display: inline;
+        margin-right: 20px;
+        color: hsl(158, 36%, 37%);
+    }
+    .Price-1{
+        display: inline;
+    }
+
+    button{
+        margin-top: 30px;
+        width: 100%;
+        padding: 10px 0px;
+        border-radius: 10px;
+        background-color: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        font-weight: 700;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media screen and (min-width:1440px){
+        body{
+            justify-content: center;
+        }
+        .container{
+            height: 60%;
+            width: 55%;
+            flex-direction: row;
+        }
+        .img-container{
+            height: 100%;
+            background-image: url(./images/image-product-desktop.jpg);
+        }
+        .text{
+            height: 100%;
+        }
+        .text-container{
+            /* background-color: red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 75%;
+            height: 85%;
+        }
+        .text-container p{
+            font-size: larger;
+        }
+        .text-container h1{
+            font-size: 40px;
+        }
+        button{
+            padding: 15px 0px;
+        }
+    }
+  </style>
+  
+</head>
+<body>
+    <div class="container">
+        <div class="img-container">
+        </div>
+        <main class="text">
+            <div class="text-container">
+                <p id="sub-heading">P E R F U M E</p>
+                <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
+                <p>
+                    A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                    Perfumer-Creator for the House of CHANEL.
+                </p>
+                <div>
+                    <h1 class="Price"><span id="Bigger-Price">$149.99</span></h1>
+                    <p class="Price-1"><del>$169.99</del></p>
+                </div>
+                <button><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>&nbsp;Add to Cart</button>
+            </div>
+        </main>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Keshav Goyal</a>.
+    </div>
+</body>
+</html>
