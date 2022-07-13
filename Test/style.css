@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    border: 5px solid green;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block{
+    background-color: red;
+    height: 60%;
+    width: 30%;
+}
+
+.text{
+    background-color: salmon;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: scroll;
+    padding: auto;
+}
+
+h1, p{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
