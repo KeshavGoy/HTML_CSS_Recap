@@ -12,7 +12,7 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
     body{
-        height: 100vh;
+        height: 140vh;
         background-color: hsl(30, 38%, 92%);
         display: flex;
         flex-direction: column;
@@ -22,12 +22,11 @@
 
     .container{
         /* background-color: red; */
-        height: 95%;
+        height: 94%;
         width: 90%;
         display: flex;
         flex-direction: column;
         border-radius: 20px;
-        overflow: hidden;
     }
 
     .img-container{
@@ -40,7 +39,7 @@
     }
 
     .text{
-        height: 60%;
+        height: 100%;
         width: 100%;
         background-color: hsl(0, 0%, 100%);
         display: flex;
@@ -49,7 +48,11 @@
     }
 
     .text-container{
+        height: 90%;
         width: 91%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .text-container h1{
@@ -86,11 +89,12 @@
         font-family: 'Montserrat', sans-serif;
     }
 
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
 
     @media screen and (min-width:1440px){
         body{
+            height: 100vh;
             justify-content: center;
         }
         .container{
@@ -107,18 +111,18 @@
         }
         .text-container{
             /* background-color: red; */
+            width: 75%;
+            height: 90%;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-            width: 75%;
-            height: 85%;
         }
-        .text-container p{
+        /* .text-container p{
             font-size: larger;
         }
         .text-container h1{
             font-size: 40px;
-        }
+        } */
         button{
             padding: 15px 0px;
         }
@@ -146,11 +150,11 @@
             </div>
         </main>
     </div>
-    <div class="attribution">
+    <!-- <div class="attribution">
         <p>
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="#">Keshav Goyal</a>.
         </p>
-    </div>
+    </div> -->
 </body>
 </html>
