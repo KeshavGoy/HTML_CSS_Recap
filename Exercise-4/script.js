@@ -25,6 +25,7 @@ addBtn.addEventListener('click',function(e){
         notesObj.push([addTxt.value,addTtl.value]);
         localStorage.setItem("notes",JSON.stringify(notesObj));
         addTxt.value = "";
+        addTtl.value="";
         showNotes();
     }
 });
