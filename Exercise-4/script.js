@@ -82,7 +82,7 @@ search.addEventListener('input',function(e){
     let inputVal = search.value;
     let cards = document.getElementsByClassName("card");
     Array.from(cards).forEach(function(element){
-        let cardTxt = element.getElementsByTagName('p')[0].innerText.toLowerCase();
+        let cardTxt = element.getElementsByTagName('pre')[0].innerText.toLowerCase();
         let cardTtl = element.getElementsByTagName('h2')[0].innerText.toLowerCase();
         if(cardTxt.includes(inputVal.toLowerCase()) || cardTtl.includes(inputVal.toLowerCase()))
         {
