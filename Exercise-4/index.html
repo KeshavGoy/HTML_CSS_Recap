@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="left-data">
+          <h3>Quick Notes</h3>
+          <p><a href="./index.html">Home</a></p>
+        </div>
+        <div class="right-data">
+            <input type="text" id="search" name="search" placeholder="Search Notes" />
+            <input type="submit" name="submit"/>
+        </div>
+      </nav>
+      <main class="Main">
+        <div class="Input-Area">
+          <h1>Welcome to Quick Notes</h1>
+          <div id="input-form">
+            <h2>Add a Note</h2>
+            <p>
+                <label for="inputTitle">Note Title</label>
+              </p>
+              <input id="inputTitle" name="inputTitle" placeholder="Title">
+            <p>
+              <label for="inputNote">Note Content</label>
+            </p>
+            <textarea id="inputNote" name="inputNote" rows="4" placeholder="Content Here..."></textarea>
+            <button class="button" id="addBtn">Add Note</button>
+        </div>
+        </div>
+        <div class="middle-section">
+            <hr />
+            <h1>Your Notes</h1>
+            <hr />
+        </div>
+        <div class="Notes-Area">
+          <!-- <div class="card">
+            <h2 class="space card-title">Note</h2>
+            <p class="space card-content"></p>
+            <button class="button space" id="delBtn" type="submit">Delete Note</button>
+          </div> -->
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
