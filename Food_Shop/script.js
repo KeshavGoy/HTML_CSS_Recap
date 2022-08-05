@@ -70,7 +70,7 @@ function addOrder(listElem) {
 
 function add(elem)
 {
-    let name = elem.children[1].innerText;
+    let name = elem.children[0].innerText;
     let orderObj = JSON.parse(localStorage.getItem("orders"));
     orderObj[name].qty++;
     orderObj.total.qty++;
@@ -79,7 +79,7 @@ function add(elem)
     showOrders();
 }
 function remove(elem){
-    let name = elem.children[1].innerText;
+    let name = elem.children[0].innerText;
     let orderObj = JSON.parse(localStorage.getItem("orders"));
     if(orderObj[name].qty == 1)
     {
