@@ -216,3 +216,7 @@ footer{
 .test{
     height: 150vh;
 }
+
+.fa-shopping-cart:hover, .fa-plus:hover, .fa-minus:hover{
+    cursor: pointer;
+}
