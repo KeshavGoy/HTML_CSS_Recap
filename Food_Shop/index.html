@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Food Mania</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+            integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <div class="left">
+                    <div class="logo">
+                        <h2><span class="txt-red">Food</span> Mania</h2>
+                    </div>
+                    <div class="nav-item">
+                        <ul class="list" id="nav-list">
+                            <li class="list-item"><a href="./index.html">Home</a></li>
+                            <li class="list-item"><a href="#main">Menu</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <button>Sign UP</button>
+                </div>
+            </nav>
+            <header>
+                <div class="content">
+                    <div id="slogan">
+                        <h1>It's not just Food. It's an Experience.</h1>
+                    </div>
+                    <div class="btn-content">
+                        <a href="#main"><button class="btn">View Menu</button></a>
+                    </div>
+                </div>
+                <div class="image">
+                    <img
+                        src="./Downloads/burger1.jpg"
+                        alt="Error Loading Img"
+                    />
+                </div>
+            </header>
+            <main id="main">
+                <section>
+                    <h1>Sizzling Menu</h1>
+                    <table id="menu">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th class="name">Name</th>
+                                <th class="descr">Description</th>
+                                <th class="price">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="img"><img src="./Downloads/burger.webp" alt="Loading Error"></td>
+                                <td class="name">Zingy Burger</td>
+                                <td class="descr">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sequi culpa sint delectus
+                                    mollitia cupiditate expedita rem nemo
+                                    corporis adipisci a!
+                                </td>
+                                <td class="price">
+                                    500
+                                    <i
+                                        class="fa fa-shopping-cart"
+                                        aria-hidden="true"
+                                        onclick="addOrder(this.parentNode.parentNode)"
+                                    ></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="img"><img src="./Downloads/premium.jpg" alt="Loading Error"></td>
+                                <td class="name">Premium Burger</td>
+                                <td class="descr">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sequi culpa sint delectus
+                                    mollitia cupiditate expedita rem nemo
+                                    corporis adipisci a!
+                                </td>
+                                <td class="price">
+                                    1500
+                                    <i
+                                        class="fa fa-shopping-cart"
+                                        aria-hidden="true"
+                                        onclick="addOrder(this.parentNode.parentNode)"
+                                    ></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="img"><img src="./Downloads/cheese.jpg" alt="Loading Error"></td>
+                                <td class="name">Classic Burger</td>
+                                <td class="descr">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sequi culpa sint delectus
+                                    mollitia cupiditate expedita rem nemo
+                                    corporis adipisci a!
+                                </td>
+                                <td class="price">
+                                    200
+                                    <i
+                                        class="fa fa-shopping-cart"
+                                        aria-hidden="true"
+                                        onclick="addOrder(this.parentNode.parentNode)"
+                                    ></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="img"><img src="./Downloads/spicy.jpg" alt="Loading Error"></td>
+                                <td class="name">Spicy Burger</td>
+                                <td class="descr">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sequi culpa sint delectus
+                                    mollitia cupiditate expedita rem nemo
+                                    corporis adipisci a!
+                                </td>
+                                <td class="price">
+                                    299
+                                    <i
+                                        class="fa fa-shopping-cart"
+                                        aria-hidden="true"
+                                        onclick="addOrder(this.parentNode.parentNode)"
+                                    ></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="img"><img src="./Downloads/damnspicy.jpg" alt="Loading Error"></td>
+                                <td class="name">Too Damn Spicy Burger!!!!</td>
+                                <td class="descr">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Burial Services are complimentary
+                                </td>
+                                <td class="price">
+                                    200
+                                    <i
+                                        class="fa fa-shopping-cart"
+                                        aria-hidden="true"
+                                        onclick="addOrder(this.parentNode.parentNode)"
+                                    ></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <aside>
+                    <h1>Your Cart</h1>
+                    <table id="cart">
+                        <thead>
+                            <tr>
+                                <th class="item-name">Item</th>
+                                <th class="qty">Quantity</th>
+                                <th class="price">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-body">
+                            <!-- <tr>
+                                <td class="item-name">Item</td>
+                                <td class="qty">5</td>
+                                <td class="price">534</td>
+                            </tr> -->
+                            <!-- <tr>
+                                <td colspan="2" id="total">Total:</td>
+                                <td id="total-price">234</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </aside>
+            </main>
+            <footer>
+                <h2>Made by Kesh</h2>
+            </footer>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grand Library</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <div class="left-data">
+                    <h2>Grand Library</h2>
+                    <p><a href="./index.html">Home</a></p>
+                </div>
+                <div class="right-data">
+                    <input type="text" id="search" name="search" placeholder="Search Library"/>
+                    <!-- <input type="submit" name="submit"/> -->
+                </div>
+            </nav>
+            <div class="showMessage">
+                <!-- <div class="alert alert-success"><strong>Success!</strong> Your book has been added.</div>
+                <div class="alert alert-fail"><strong>Failure!</strong> Your book can't be added.</div> -->
+            </div>
+            <main>
+                <h1 class="margin-y">Welcome to this Grand Library!</h1>
+                <h3 class="margin-y">Add a book to the library</h3>
+                <form id="libraryForm">
+                    <div class="input-item margin-y">
+                        <label for="bookName">Book Name:</label>
+                        <input type="text" id="bookName" placeholder="Name">
+                    </div>
+                    <div class="input-item margin-y">
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" placeholder="Author">
+                    </div>
+                    <div class="radioForm margin-y">
+                        <div class="width-20">
+                            <p>Types:</p>
+                        </div>
+                        <div class="radios">
+                            <div class="input-item-radio">
+                                <input type="radio" id="Fiction" name="type" value="Fiction" checked>
+                                <label for="Fiction">Fiction</label>
+                            </div>
+                            <div class="input-item-radio">
+                                <input type="radio" id="Educational" name="type" value="Educational">
+                                <label for="Educational">Educational</label>
+                            </div>
+                            <div class="input-item-radio">
+                                <input type="radio" id="Other" name="type" value="Other">
+                                <label for="Other">Other</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary margin-y">Add Book</button>
+                </form>
+                <div class="margin-y" id="table">
+                    <table>
+                        <h1>Books</h1>
+                        <thead>
+                            <tr style="background-color: whitesmoke;">
+                                <th>Book</th>
+                                <th>Author</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- <tr>
+                                <td>BookName</td>
+                                <td>AuthorName</td>
+                                <td>True</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
