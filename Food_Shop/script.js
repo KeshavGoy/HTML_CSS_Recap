@@ -39,8 +39,8 @@ function showOrders() {
 
 function addOrder(listElem) {
     // console.log(listElem.children);
-    let name = listElem.children[0].innerText;
-    let price = Number(listElem.children[2].innerText);
+    let name = listElem.children[1].innerText;
+    let price = Number(listElem.children[3].innerText);
     // console.log(name,price);
     let orders = localStorage.getItem("orders");
     if (orders == null) {
@@ -70,7 +70,7 @@ function addOrder(listElem) {
 
 function add(elem)
 {
-    let name = elem.children[0].innerText;
+    let name = elem.children[1].innerText;
     let orderObj = JSON.parse(localStorage.getItem("orders"));
     orderObj[name].qty++;
     orderObj.total.qty++;
@@ -79,7 +79,7 @@ function add(elem)
     showOrders();
 }
 function remove(elem){
-    let name = elem.children[0].innerText;
+    let name = elem.children[1].innerText;
     let orderObj = JSON.parse(localStorage.getItem("orders"));
     if(orderObj[name].qty == 1)
     {
