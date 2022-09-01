@@ -103,6 +103,13 @@ function showNotes(){
 function deleteNote(index){
     let notes = localStorage.getItem("notes");
     let notesObj = JSON.parse(notes);
+    let imp = localStorage.getItem("imp");
+    impObj = JSON.parse(imp);
+    console.log(typeof index)
+    if(impObj.includes(Number(index))){
+        impObj.splice(impObj.indexOf(index),1);
+        localStorage.setItem("imp", JSON.stringify(impObj));
+    }
     notesObj.splice(index,1);
     localStorage.setItem("notes",JSON.stringify(notesObj));
     showNotes();
