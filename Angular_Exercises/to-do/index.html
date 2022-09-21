@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TO_DO</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body ng-app="ToDo">
+        <div class="container" ng-controller="FormCtrl">
+            <h1>Tasky</h1>
+            <div class="form-container">
+                <form name="myForm" novalidate>
+                    <label for="title">Add Task:</label>
+                    <input type="text" id="title" name="title" ng-model="title" required>
+                    <button ng-click="addTodo()" ng-disabled="!myForm.$valid">Add Task</button>
+                </form>
+            </div>
+            <div class="list-container">
+                <ul>
+                    <li ng-repeat="task in tasks">
+                        <button class="content" ng-click="taskStatusChange(tasks.indexOf(task))" ng-class="{done:  task.completed}">{{task.title}}</button>
+                        <!-- <input type="checkbox" ng-model="task.completed">
+                        {{task.title}} -->
+                        <button ng-click="removeTask(tasks.indexOf(task))"><strong>X</strong></button>
+                    </li>
+                    <button ng-click="clearCompleted()" ng-disabled="completed<=0" ng-show="tasks.length>0">Clear Completed</button>
+                </ul>
+            </div>
+        </div>
+
+        <script src="./angularjs.js"></script>
+    </body>
+    </html>
+</html>
